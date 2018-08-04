@@ -1,0 +1,24 @@
+{
+  "name": "beatnik-investec",
+  "description": "Chronicle Beatnik Investec",
+  "private": true,
+  "author": "Jason Norwood-Young",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery-hotspot": "^1.0.2",
+    "npm": "^6.0.0",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "less-brunch": "^2.10.0"
+  }
+}

@@ -1,0 +1,415 @@
+body {
+	background-color: white;
+	margin: 0px;
+}
+
+a {
+	color: #ec1c24;
+	text-decoration: none;
+}
+
+.container {
+	width: 100vw;
+	padding-top: 60px;
+	overflow-x: hidden;
+}
+
+p, ul {
+	font-family: 'Tajawal', sans-serif;
+	font-size: 14pt;
+}
+
+ul {
+	line-height: 120%;
+	font-size: 12pt;
+
+	li {
+		margin-bottom: 20px;
+	}
+}
+
+#header {
+
+	width: 100%;
+	box-shadow: 0px 2px 3px 0px rgba(40, 40, 40, 0.1);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #f7f7f7;
+	z-index: 100;
+	a {
+		color: black;
+		font-size: 8pt;
+		line-height: 0px;
+	}
+
+	#header-container {
+		/*max-width: 1024px;*/
+		margin: 0px auto;
+		padding: 10px 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		img {
+			max-height: 40px;
+		}
+	}
+
+	#dmlogo {
+		height: 27px;
+		margin-top: 6px;
+	}
+
+	#beatniklogo {
+		height: 30px;
+		margin-top: 5px;
+	}
+
+	#sponsorLogoContainer {
+		font-weight: bold;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		font-size: 8pt;
+		display: inline-block;
+		margin-left: -90px;
+		img {
+			vertical-align: middle;
+		}
+		#paidFor {
+			margin-right: 3px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+.parallax {
+	height: 50vh;
+	width: 100%;
+	margin-bottom: 50px;
+	overflow: hidden;
+	background-attachment: scroll;
+	background-image: url("./images/desktop/hero.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#topimg {
+	background-image: url("./images/desktop/hero.jpg");
+	margin-bottom: 70px;
+}
+
+#video {
+	width: 100%;
+	height: auto;
+}
+
+.body-text {
+	max-width: 600px;
+	margin: 0px auto;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.full-width {
+	img {
+		width: 100vw;
+	}
+}
+
+.drop-cap {
+	font-family: 'Playfair Display', serif;
+	float: left;
+	line-height: 46px;
+	font-size: 50px;
+	margin-top: -5px;
+	margin-right: 3px;
+	margin-left: -8px;
+}
+
+.headline {
+	font-size: 60pt;
+	text-align: center;
+	margin: 20px auto 85px auto;
+	font-weight: 600;
+	line-height: 55pt;
+	max-width: 800px;
+}
+
+.headline, .pull-quote {
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 100%;
+}
+
+.pull-quote {
+	font-family: 'Abril Fatface', serif;
+}
+
+.headline {
+	font-family: 'Abril Fatface', serif;
+	font-weight: 100;
+}
+
+.blurb {
+    font-weight: 700;
+    font-family: 'Tajawal', sans-serif;
+    margin-bottom: 40px;
+	line-height: 112%;
+    font-size: 17pt;
+}
+
+
+.pull-quote {
+	width: 200px;
+	font-size: 23px;
+	line-height: 32px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.pull-quote-right {
+	float: right;
+	margin-right: -5px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+.pull-quote-left {
+	float: left;
+	margin-left: -80px;
+	margin-right: 20px;
+}
+
+.mid-image {
+	margin: 80px 0px;
+}
+
+footer {
+	p {
+		font-size: 10pt;
+	}
+
+	margin: 20px;
+	margin-top: 40px;
+	text-align: center;
+
+	border-top: 1px #DDD solid;
+}
+
+#topimg {
+	/*margin-left: -100vw;*/
+	/*background-color: #000;*/
+}
+
+#presidentContainer {
+	width: 100vw;
+	margin-bottom: 76px;
+	.overlay {
+		position: absolute;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	.show-overlay {
+		opacity: 1;
+
+	}
+
+	.hotspot {
+		position: absolute;
+		opacity: 0.8;
+		/*border: 5px #bfecfd solid;*/
+		z-index: 99;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+
+}
+
+#presidentMobileContainer {
+	width: 100vw;
+	margin-bottom: 76px;
+	.overlay {
+		position: absolute;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	.show-overlay {
+		opacity: 1;
+
+	}
+
+	.hotspot {
+		position: absolute;
+		opacity: 0.8;
+		/*border: 5px #bfecfd solid;*/
+		z-index: 99;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+
+}
+
+#PresidentHotelAd {
+	margin-top: 70px;
+}
+
+.is-fixed {
+	position: fixed !important;
+	top: 25%;
+}
+
+
+
+// Media specific
+// Desktop
+@media screen and (min-width: 737px) {
+	.show-mobile {
+		display: none;
+	}
+
+	.hide-desktop {
+		display: none;
+	}
+}
+
+// Tablet
+@media screen and (max-width: 736px) {
+
+	.pull-quote-right, .pull-quote-left {
+		float: none;
+		width: 100%;
+		margin: 40px 0px;
+		clear: both;
+		text-align: center;
+	}
+
+	.body-text {
+		margin: 0px 100px;
+		// width: 100%;
+		max-width: none;
+		display: block;
+	}
+
+	#bottomimg {
+		background-size: 100%;
+		background-position-y: 50px;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	.show-desktop {
+		display: none;
+	}
+
+	#sponsorMobileContainer {
+		top: 0px;
+		left: 0px;
+		width: 100vw;
+		background-color: #f7f7f7;
+		height: 38px;
+		text-align: center;
+		padding-top: 8px;
+		box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.2);
+		img {
+			height: 30px;
+		}
+	}
+
+	#header {
+		position: absolute;
+	}
+
+	#header #header-container img {
+	    max-height: 26px;
+	}
+
+	#dmmobilelogo {
+		margin-top: 5px;
+	}
+
+	#PresidentHotelAd {
+		margin-top: 40px;
+	}
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+
+	.body-text {
+		margin: 0px 60px;
+	}
+
+	#video {
+		height: auto;
+	}
+
+	.headline {
+		font-size: 40pt;
+		margin: 20px auto 46px auto;
+		max-width: 90%;
+	}
+
+	.parallax {
+	    height: 50vh;
+	    background-attachment: scroll;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    margin-top: 40px;
+	}
+
+	#topimg {
+		background-image: url("./images/mobile/hero.jpg");
+	}
+
+	#presidentMobileBackground {
+		background-image: url("./images/mobile/PresidentHotelMainImageMobile.jpg");
+		background-attachment: initial;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		width: 100vw;
+		position: absolute;
+	}
+
+	.sticky {
+		position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -ms-sticky;
+		position: -o-sticky;
+		top: 15px;
+	}
+
+	.is-fixed {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100vw;
+	}
+
+	#topimg {
+		margin-top: 40px;
+		background-position: cover;
+	}
+
+	#header #sponsorLogoContainer {
+		margin-left: -45px;
+	}
+
+}
+.fade {
+
+}
+.fade2 {
+	opacity: 0;
+	transition: opacity 5s ease-in-out;
+	position: absolute;
+}
