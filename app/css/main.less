@@ -3,9 +3,25 @@ body {
 	margin: 0px;
 }
 
+h3   {
+	margin: 70px;
+}
+
+h4   {
+	margin: 120px;
+}
+
+h5   {
+	margin: 90px;
+}
+
 a {
-	color: #ec1c24;
-	text-decoration: none;
+	font-family: futura-pt, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	text-transform: uppercase;
+  	color: #001322;
+  	text-decoration: none;
 }
 
 .container {
@@ -15,8 +31,9 @@ a {
 }
 
 p, ul {
-	font-family: 'Tajawal', sans-serif;
-	font-size: 14pt;
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 ul {
@@ -68,7 +85,7 @@ ul {
 
 	#sponsorLogoContainer {
 		font-weight: bold;
-		font-family: sans-serif;
+		font-family: "futura-pt", sans-serif;
 		text-transform: uppercase;
 		font-size: 8pt;
 		display: inline-block;
@@ -152,20 +169,22 @@ ul {
 }
 
 .pull-quote {
-	font-family: 'Abril Fatface', serif;
+	font-family: futura-pt-bold, sans-serif;
+	text-transform: uppercase;
 }
 
 .headline {
-	font-family: 'Abril Fatface', serif;
-	font-weight: 100;
+	font-family: futura-pt-bold, sans-serif;
+	text-transform: uppercase;
 }
 
 .blurb {
-    font-weight: 700;
-    font-family: 'Tajawal', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+    font-family: futura-pt-bold, sans-serif;
     margin-bottom: 40px;
 	line-height: 112%;
-    font-size: 17pt;
+    font-size: 20pt;
 }
 
 
@@ -194,11 +213,9 @@ footer {
 	p {
 		font-size: 10pt;
 	}
-
 	margin: 20px;
 	margin-top: 40px;
 	text-align: center;
-
 	border-top: 1px #DDD solid;
 }
 
@@ -373,17 +390,6 @@ footer {
 		background-image: url("./images/mobile/hero.jpg");
 	}
 
-	#presidentMobileBackground {
-		background-image: url("./images/mobile/PresidentHotelMainImageMobile.jpg");
-		background-attachment: initial;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 100vh;
-		width: 100vw;
-		position: absolute;
-	}
-
 	.sticky {
 		position: -webkit-sticky;
 		position: -moz-sticky;
@@ -391,8 +397,6 @@ footer {
 		position: -o-sticky;
 		top: 15px;
 	}
-
-
 
 	#topimg {
 		margin-top: 40px;
@@ -415,7 +419,7 @@ footer {
 
 .fade2 {
 	opacity: 0;
-	transition: opacity 5s ease-in-out;
+	transition: opacity 3s ease-in-out;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
